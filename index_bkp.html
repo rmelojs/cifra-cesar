@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Cifra de César</title>
+</head>
+<body>
+    <h1>Cifra de César</h1>
+
+<div class="container">
+    <div class="section">
+        <h2>Criptografar</h2>
+        <form id="criptoForm">
+            <div class="fields">
+                <label for="textoCriptografar">Digite o texto para criptografar:</label><br>
+                <input type="text" id="textoCriptografar" required>
+            </div>
+            <div class="fields">
+                <label for="deslocamentoCriptografar">Deslocamento:</label><br>
+                <input type="number" id="deslocamentoCripto" size="4" required>
+            </div>
+            <button type="submit">Criptografar</button>
+        </form>
+        <h3>Texto criptografado:</h3>
+        <p id="resultadoCriptografar"></p>
+    </div>
+
+    <div class="section">
+        <h2>Descriptografar</h2>
+        <form id="decriptoForm">
+            <div class="fields">
+                <label for="textoDescriptografar">Texto cifrado:</label><br>
+                <input type="text" id="textoDescriptografar" required>
+            </div>
+            <div class="fields">
+                <label for="deslocamentoDescriptografar">Deslocamento:</label><br>
+                <input type="number" id="deslocamentoDescripto" required>
+            </div>
+            <button type="submit">Descriptografar</button>
+        </form>
+        <h3>Texto descriptografado:</h3>
+        <p id="resultadoDescriptografar"></p>
+    </div>
+</div> 
+    <script src="cifra.js"></script>
+</body>
+</html>
